@@ -78,7 +78,7 @@ process.source = cms.Source("PoolSource",
 )
 
 process.TFileService = cms.Service("TFileService",
-      fileName = cms.string("Histograms.root"),
+      fileName = cms.string("Tree.root"),
       closeFileFast = cms.untracked.bool(True)
   )
   
