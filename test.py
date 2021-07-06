@@ -1,4 +1,4 @@
-# cmsRun test.py maxEvents=10 inputFiles=file:/uscms/home/wwei/nobackup/LA/CMSSW_11_3_0/src/SiPixelCalSingleMuon.root
+# cmsRun test.py maxEvents=10 outName=testrun.root inputFiles=file:/uscms/home/wwei/nobackup/LA/CMSSW_11_3_0/src/SiPixelCalSingleMuon.root
 
 import FWCore.ParameterSet.Config as cms
 import sys
