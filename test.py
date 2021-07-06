@@ -52,7 +52,7 @@ process.MessageLogger = cms.Service("MessageLogger",
 process.SiPixelLorentzAnglePCLWorker = cms.EDProducer(
     "SiPixelLorentzAnglePCLWorker",
     folder = cms.string('CalibTracker'),
-#    fileName = cms.string(options.outName),
+   fileName = cms.string(options.outName),
     src = cms.InputTag("TrackRefitter"),
     binsDepth    = cms.int32(50),
     binsDrift =    cms.int32(200),
@@ -77,8 +77,8 @@ process.source = cms.Source("PoolSource",
 #   skipEvents = cms.untracked.uint32(100)
 )
 
-process.TFileService = cms.Service("TFileService",
-      fileName = cms.string("Tree.root"),
-      closeFileFast = cms.untracked.bool(True)
-  )
+# process.TFileService = cms.Service("TFileService",
+#       fileName = cms.string("Tree.root"),
+#       closeFileFast = cms.untracked.bool(True)
+#   )
   
